@@ -1,26 +1,120 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAF6F2;
+  --foreground: #121815;
+  --midnight-slate: #121815;
+  --champagne-silk: #FAF6F2;
+  --brass-gold: #C8A273;
+  --brass-gold-light: #D7B38C;
+  --rose-blush: #DDA5A5;
+  --rose-blush-dark: #C89494;
+  --border-color: rgba(18, 24, 21, 0.08);
+  --border-color-glow: rgba(200, 162, 115, 0.25);
+  --card-glass: rgba(255, 255, 255, 0.45);
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-midnight-slate: var(--midnight-slate);
+  --color-champagne-silk: var(--champagne-silk);
+  --color-brass-gold: var(--brass-gold);
+  --color-brass-gold-light: var(--brass-gold-light);
+  --color-rose-blush: var(--rose-blush);
+  --color-rose-blush-dark: var(--rose-blush-dark);
+  --color-border-card: var(--border-color);
+  --color-border-card-glow: var(--border-color-glow);
+  --color-card-glass: var(--card-glass);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-serif: var(--font-serif), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  
+  --shadow-editorial: 0 10px 40px -15px rgba(18, 24, 21, 0.06), 0 1px 3px rgba(18, 24, 21, 0.01);
+  --shadow-editorial-hover: 0 30px 60px -20px rgba(18, 24, 21, 0.12), 0 1px 6px rgba(200, 162, 115, 0.04);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--champagne-silk);
+  color: var(--midnight-slate);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom marquee keyframes and classes */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee-fast {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+/* Slowly rotating golden seal badge */
+@keyframes rot-badge {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-badge-rotate {
+  animation: rot-badge 20s linear infinite;
+}
+
+/* Smooth custom scrollbar for editorial styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--champagne-silk);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brass-gold);
+  border-radius: 4px;
+  border: 2px solid var(--champagne-silk);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--midnight-slate);
+}
+
+/* Custom styles for editorial layout */
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+
+/* Frosted glass overlay */
+.glass-panel {
+  background-color: var(--card-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+}
+
+.glass-panel-glow:hover {
+  border-color: var(--border-color-glow);
+  box-shadow: 0 15px 45px -15px rgba(200, 162, 115, 0.15);
+}
+
+/* Horizontal scrolling wrapper style */
+.horizontal-scroll-section {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+
+.custom-hairline-grid {
+  background-image: linear-gradient(to right, rgba(18, 24, 21, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(18, 24, 21, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
