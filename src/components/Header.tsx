@@ -56,7 +56,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full z-40 top-0 left-0 bg-transparent">
+      <header className={`w-full z-40 top-0 left-0 bg-transparent ${pathname === "/" ? "absolute" : "relative"}`}>
         {/* Top Marquee Banner - Midnight background & Brass text */}
         <div className="w-full bg-midnight-slate py-2.5 overflow-hidden border-b border-brass-gold/10 flex items-center select-none">
           <div className="animate-marquee-slow flex whitespace-nowrap text-[10px] font-mono uppercase tracking-[0.25em] text-brass-gold-light/95 gap-16">
