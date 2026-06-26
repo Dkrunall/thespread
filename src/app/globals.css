@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FAF6F2;
+  --background: #F5F6F5; /* White background */
   --foreground: #121815;
   --midnight-slate: #121815;
-  --champagne-silk: #FAF6F2;
-  --brass-gold: #2D7F54; /* Bag Forest Green */
-  --brass-gold-light: #08A08C; /* Bag Teal */
-  --rose-blush: #E75A8D; /* Bag Pink */
-  --rose-blush-dark: #C84474; /* Bag Dark Pink */
-  --bag-aqua: #9BE3E2; /* Bag Light Aqua */
-  --bag-lime: #C2E29B; /* Bag Soft Lime */
+  --champagne-silk: #F5F6F5; /* White background */
+  --brass-gold: #07745B; /* Primary Green */
+  --brass-gold-light: #418764; /* Secondary Green */
+  --rose-blush: #F283AE; /* Pink Accent */
+  --rose-blush-dark: #D85887; /* Pink Accent Darkened */
+  --bag-aqua: #87D1CC; /* Light Aqua */
+  --bag-lime: #BDD39E; /* Lime Accent */
+  --bag-teal: #04AE97; /* Accent Teal */
   --border-color: rgba(18, 24, 21, 0.08);
-  --border-color-glow: rgba(45, 127, 84, 0.25);
+  --border-color-glow: rgba(7, 116, 91, 0.25);
   --card-glass: rgba(255, 255, 255, 0.45);
 }
 
@@ -27,6 +28,7 @@
   --color-rose-blush-dark: var(--rose-blush-dark);
   --color-bag-aqua: var(--bag-aqua);
   --color-bag-lime: var(--bag-lime);
+  --color-bag-teal: var(--bag-teal);
   --color-border-card: var(--border-color);
   --color-border-card-glow: var(--border-color-glow);
   --color-card-glass: var(--card-glass);
@@ -35,7 +37,7 @@
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   
   --shadow-editorial: 0 10px 40px -15px rgba(18, 24, 21, 0.06), 0 1px 3px rgba(18, 24, 21, 0.01);
-  --shadow-editorial-hover: 0 30px 60px -20px rgba(18, 24, 21, 0.12), 0 1px 6px rgba(45, 127, 84, 0.04);
+  --shadow-editorial-hover: 0 30px 60px -20px rgba(18, 24, 21, 0.12), 0 1px 6px rgba(7, 116, 91, 0.04);
 }
 
 body {
@@ -107,7 +109,7 @@ body {
 
 .glass-panel-glow:hover {
   border-color: var(--border-color-glow);
-  box-shadow: 0 15px 45px -15px rgba(200, 162, 115, 0.15);
+  box-shadow: 0 15px 45px -15px rgba(7, 116, 91, 0.15);
 }
 
 /* Horizontal scrolling wrapper style */

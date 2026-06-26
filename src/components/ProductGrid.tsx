@@ -296,8 +296,11 @@ function ProductCard({ product, idx, isDimmed, isAdded, onAdd }: CardProps) {
   const [rotateX, setRotateX] = useState(0);
   const [rotateY, setRotateY] = useState(0);
   const [showInfo, setShowInfo] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [btnHovered, setBtnHovered] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    setIsHovered(true);
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
@@ -310,6 +313,7 @@ function ProductCard({ product, idx, isDimmed, isAdded, onAdd }: CardProps) {
   };
 
   const handleMouseLeave = () => {
+    setIsHovered(false);
     setRotateX(0);
     setRotateY(0);
     setShowInfo(false);
@@ -322,15 +326,22 @@ function ProductCard({ product, idx, isDimmed, isAdded, onAdd }: CardProps) {
         transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(0)`,
         transition: "transform 0.15s ease-out, box-shadow 0.3s ease, opacity 0.4s ease, border-color 0.4s ease",
         opacity: isDimmed ? 0.35 : 1,
+        borderColor: isHovered && !isDimmed ? product.color : undefined,
       }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={`bg-white/40 backdrop-blur-md rounded-3xl p-6 flex flex-col justify-between text-left shadow-sm hover:shadow-editorial-hover relative overflow-hidden group select-none h-[420px] border ${
         !isDimmed && !isDimmed
-          ? "border-midnight-slate/10 hover:border-brass-gold/30"
-          : "border-brass-gold/50 shadow-[0_0_15px_rgba(45, 127, 84, 0.25)]"
+          ? "border-midnight-slate/10"
+          : "border-brass-gold/50 shadow-[0_0_15px_rgba(7, 116, 91, 0.25)]"
       }`}
     >
+      {/* Subtle product-colored ambient blur blob inside the card */}
+      <div 
+        className="absolute bottom-[-15%] right-[-10%] w-40 h-40 rounded-full blur-[45px] pointer-events-none opacity-15 transition-all duration-500 group-hover:scale-120 group-hover:opacity-30"
+        style={{ backgroundColor: product.color }}
+      />
+
       {/* Glowing corner line when highlighted by pairing */}
       {!isDimmed && (
         <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-brass-gold/15 to-transparent rounded-bl-full pointer-events-none" />
@@ -339,7 +350,7 @@ function ProductCard({ product, idx, isDimmed, isAdded, onAdd }: CardProps) {
       {/* Header Stamp SVG */}
       <div className="flex justify-between items-start mb-6 z-10 relative">
         <div className="w-12 h-12 relative flex items-center justify-center">
-          <svg className="w-full h-full text-brass-gold" viewBox="0 0 100 100">
+          <svg className="w-full h-full transition-colors duration-300" style={{ color: product.color }} viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="46" fill="transparent" stroke="currentColor" strokeWidth="1.5" />
             <circle cx="50" cy="50" r="38" fill="transparent" stroke="currentColor" strokeWidth="1" strokeDasharray="4,3" />
             <circle cx="50" cy="50" r="30" fill="transparent" stroke="currentColor" strokeWidth="0.8" />
@@ -378,7 +389,13 @@ function ProductCard({ product, idx, isDimmed, isAdded, onAdd }: CardProps) {
               {product.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="bg-midnight-slate/5 border border-midnight-slate/10 text-midnight-slate/60 text-[9px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full"
+                  className="text-[9px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-full font-bold transition-all duration-300"
+                  style={{
+                    backgroundColor: `${product.color}15`,
+                    borderColor: `${product.color}35`,
+                    color: product.color,
+                    borderWidth: '1px',
+                  }}
                 >
                   {tag}
                 </span>
@@ -390,7 +407,7 @@ function ProductCard({ product, idx, isDimmed, isAdded, onAdd }: CardProps) {
           <div className={`absolute inset-0 transition-opacity duration-300 flex flex-col justify-center bg-[#FAF6F2]/10 backdrop-blur-xs font-mono text-[9px] text-midnight-slate/75 space-y-2.5 ${showInfo ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
             <div className="flex justify-between border-b border-midnight-slate/5 pb-1">
               <span>CATEGORY:</span>
-              <span className="font-bold text-brass-gold">{product.category.toUpperCase()}</span>
+              <span className="font-bold font-mono" style={{ color: product.color }}>{product.category.toUpperCase()}</span>
             </div>
             <div className="flex justify-between border-b border-midnight-slate/5 pb-1">
               <span>WEIGHT:</span>
@@ -433,10 +450,17 @@ function ProductCard({ product, idx, isDimmed, isAdded, onAdd }: CardProps) {
             e.stopPropagation();
             onAdd(product);
           }}
+          onMouseEnter={() => setBtnHovered(true)}
+          onMouseLeave={() => setBtnHovered(false)}
+          style={{
+            backgroundColor: isAdded ? product.color : btnHovered ? product.color : undefined,
+            borderColor: isAdded ? `${product.color}60` : undefined,
+            color: isAdded ? '#121815' : btnHovered ? '#121815' : undefined,
+          }}
           className={`w-full py-3 rounded-full font-bold text-xs uppercase tracking-widest mt-2 flex items-center justify-center gap-2 cursor-pointer transition-all duration-500 ${
             isAdded
-              ? "bg-rose-blush text-midnight-slate border border-rose-blush-dark/30 animate-pulse"
-              : "bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate border border-transparent shadow-sm hover:scale-102 active:scale-98"
+              ? "animate-pulse"
+              : "bg-midnight-slate text-champagne-silk border border-transparent shadow-sm hover:scale-102 active:scale-98"
           }`}
         >
           {isAdded ? (

@@ -39,9 +39,9 @@ export const products: Product[] = [
     price: 26,
     description: "Classic, aromatic and perfect on everything.",
     category: "savory",
-    color: "#7E9F65",
+    color: "#BDD39E", /* Lime Accent */
     tags: ["Herb & Savory", "Everyday"],
-    imageBg: "bg-[#7E9F65]",
+    imageBg: "bg-[#BDD39E]",
   },
   {
     id: "spicy-thai",
@@ -49,9 +49,9 @@ export const products: Product[] = [
     price: 28,
     description: "Bold, zesty and slightly spicy.",
     category: "savory",
-    color: "#D96B43",
+    color: "#F283AE", /* Pink Accent */
     tags: ["Herb & Savory", "Zesty"],
-    imageBg: "bg-[#D96B43]",
+    imageBg: "bg-[#F283AE]",
   },
   {
     id: "sundried-tomatoes",
@@ -59,9 +59,9 @@ export const products: Product[] = [
     price: 27,
     description: "Rich, tangy and full of flavour.",
     category: "savory",
-    color: "#B83A14",
+    color: "#418764", /* Secondary Green */
     tags: ["Herb & Savory", "Tangy"],
-    imageBg: "bg-[#B83A14]",
+    imageBg: "bg-[#418764]",
   },
   {
     id: "curry-cumin",
@@ -69,9 +69,9 @@ export const products: Product[] = [
     price: 28,
     description: "Fragrant, earthy and deeply comforting.",
     category: "savory",
-    color: "#8E5F3B",
+    color: "#07745B", /* Primary Green */
     tags: ["Herb & Savory", "Earthy"],
-    imageBg: "bg-[#8E5F3B]",
+    imageBg: "bg-[#07745B]",
   },
   {
     id: "raspberry",
@@ -79,9 +79,9 @@ export const products: Product[] = [
     price: 27,
     description: "Fruity, bright and irresistibly smooth.",
     category: "sweet",
-    color: "#E25883",
+    color: "#F283AE", /* Pink Accent */
     tags: ["Sweet & Indulgent", "Toast"],
-    imageBg: "bg-[#E25883]",
+    imageBg: "bg-[#F283AE]",
   },
   {
     id: "chocolate-hazelnut",
@@ -89,9 +89,9 @@ export const products: Product[] = [
     price: 33,
     description: "Decadent, creamy and seriously moreish.",
     category: "sweet",
-    color: "#5C3E35",
+    color: "#418764", /* Secondary Green */
     tags: ["Sweet & Indulgent", "Decadent"],
-    imageBg: "bg-[#5C3E35]",
+    imageBg: "bg-[#418764]",
   },
   {
     id: "peanut-butter",
@@ -99,9 +99,9 @@ export const products: Product[] = [
     price: 28,
     description: "Nutty, creamy and perfectly balanced.",
     category: "sweet",
-    color: "#C29548",
+    color: "#BDD39E", /* Lime Accent */
     tags: ["Sweet & Indulgent", "Snack"],
-    imageBg: "bg-[#C29548]",
+    imageBg: "bg-[#BDD39E]",
   },
   {
     id: "date-miso",
@@ -109,9 +109,9 @@ export const products: Product[] = [
     price: 34,
     description: "Sweet, umami and naturally unique.",
     category: "sweet",
-    color: "#8E5F3B",
+    color: "#04AE97", /* Accent Teal */
     tags: ["Sweet & Indulgent", "Signature"],
-    imageBg: "bg-[#8E5F3B]",
+    imageBg: "bg-[#04AE97]",
   },
   {
     id: "saffron-honey",
@@ -119,9 +119,9 @@ export const products: Product[] = [
     price: 32,
     description: "Luxurious, floral and delicately sweet.",
     category: "specialty",
-    color: "#F6C15C",
+    color: "#87D1CC", /* Light Aqua */
     tags: ["Specialty", "Giftable"],
-    imageBg: "bg-[#F6C15C]",
+    imageBg: "bg-[#87D1CC]",
   },
   {
     id: "karak-chai",
@@ -129,9 +129,9 @@ export const products: Product[] = [
     price: 30,
     description: "Warm, spiced and full of nostalgic comfort.",
     category: "specialty",
-    color: "#C19A6B",
+    color: "#418764", /* Secondary Green */
     tags: ["Specialty", "Cozy"],
-    imageBg: "bg-[#C19A6B]",
+    imageBg: "bg-[#418764]",
   },
   {
     id: "vegan-butter",
@@ -139,9 +139,9 @@ export const products: Product[] = [
     price: 31,
     description: "Creamy, rich and perfectly spreadable.",
     category: "vegan",
-    color: "#E5C563",
+    color: "#BDD39E", /* Lime Accent */
     tags: ["Specialty", "Plant-Based"],
-    imageBg: "bg-[#E5C563]",
+    imageBg: "bg-[#BDD39E]",
   },
   {
     id: "vegan-garlic-butter",
@@ -149,9 +149,9 @@ export const products: Product[] = [
     price: 32,
     description: "Buttery, garlicky and full of flavour.",
     category: "vegan",
-    color: "#7E9F65",
+    color: "#07745B", /* Primary Green */
     tags: ["Specialty", "Plant-Based"],
-    imageBg: "bg-[#7E9F65]",
+    imageBg: "bg-[#07745B]",
   },
   {
     id: "smoked-chilli",
@@ -159,9 +159,9 @@ export const products: Product[] = [
     price: 29,
     description: "Smoky, spicy and packed with flavour.",
     category: "savory",
-    color: "#B83A14",
+    color: "#F283AE", /* Pink Accent */
     tags: ["Salt & Smoke", "Bold"],
-    imageBg: "bg-[#B83A14]",
+    imageBg: "bg-[#F283AE]",
   },
   {
     id: "bourbon",
@@ -169,9 +169,9 @@ export const products: Product[] = [
     price: 32,
     description: "Smoky and sweet gourmet infusion.",
     category: "specialty",
-    color: "#8E5F3B",
+    color: "#04AE97", /* Accent Teal */
     tags: ["Salt & Smoke", "Indulgent"],
-    imageBg: "bg-[#8E5F3B]",
+    imageBg: "bg-[#04AE97]",
   },
 ];
 

@@ -17,10 +17,11 @@ interface Question {
 export default function MoodQuiz() {
   const { addToCart } = useCart();
   const [isOpen, setIsOpen] = useState(false);
-  const [step, setStep] = useState(0); // 0: Start, 1-3: Questions, 4: Result
+  const [step, setStep] = useState(0); // 0 = start screen
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [recommendation, setRecommendation] = useState<Product | null>(null);
   const [isAdded, setIsAdded] = useState(false);
+  const [btnHovered, setBtnHovered] = useState(false);
 
   useEffect(() => {
     const handleOpen = () => {
@@ -238,7 +239,7 @@ export default function MoodQuiz() {
                     {quizQuestions[step - 1].options.map((option, index) => (
                       <motion.button
                         key={index}
-                        whileHover={{ scale: 1.01, borderColor: "rgba(45, 127, 84, 0.5)" }}
+                        whileHover={{ scale: 1.01, borderColor: "rgba(7, 116, 91, 0.5)" }}
                         whileTap={{ scale: 0.99 }}
                         onClick={() => handleAnswer(option.points)}
                         className="w-full p-4 border border-midnight-slate/15 text-left rounded-xl text-xs font-bold text-midnight-slate bg-white/40 transition-colors cursor-pointer"
@@ -267,14 +268,21 @@ export default function MoodQuiz() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="text-center space-y-5"
                 >
-                  <span className="text-[8px] font-mono font-bold text-brass-gold uppercase tracking-widest bg-brass-gold/15 px-3 py-1 rounded-full border border-brass-gold/10">
+                  <span 
+                    className="text-[8px] font-mono font-bold uppercase tracking-widest px-3 py-1 rounded-full border transition-colors"
+                    style={{ 
+                      color: recommendation.color, 
+                      backgroundColor: `${recommendation.color}15`, 
+                      borderColor: `${recommendation.color}30` 
+                    }}
+                  >
                     MATCH CONFIRMED
                   </span>
 
                   <div className="flex flex-col items-center">
                     {/* SVG Gold medallion */}
                     <div className="w-20 h-20 relative flex items-center justify-center mb-3">
-                      <svg className="w-full h-full text-brass-gold" viewBox="0 0 100 100">
+                      <svg className="w-full h-full transition-colors duration-300" style={{ color: recommendation.color }} viewBox="0 0 100 100">
                         <circle cx="50" cy="50" r="46" fill="transparent" stroke="currentColor" strokeWidth="1.5" />
                         <circle cx="50" cy="50" r="38" fill="transparent" stroke="currentColor" strokeWidth="1" strokeDasharray="3,2" />
                         <circle cx="50" cy="50" r="28" fill="transparent" stroke="currentColor" strokeWidth="0.8" />
@@ -297,10 +305,16 @@ export default function MoodQuiz() {
                   <div className="flex gap-4 pt-4">
                     <button
                       onClick={handleAddRecommendation}
+                      onMouseEnter={() => setBtnHovered(true)}
+                      onMouseLeave={() => setBtnHovered(false)}
+                      style={{
+                        backgroundColor: isAdded ? recommendation.color : btnHovered ? recommendation.color : undefined,
+                        color: isAdded ? '#121815' : btnHovered ? '#121815' : undefined,
+                      }}
                       className={`flex-1 py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 transition-all cursor-pointer ${
                         isAdded
-                          ? "bg-rose-blush text-midnight-slate"
-                          : "bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate"
+                          ? ""
+                          : "bg-midnight-slate text-champagne-silk hover:text-midnight-slate"
                       }`}
                     >
                       {isAdded ? (
