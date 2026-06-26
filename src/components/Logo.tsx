@@ -11,7 +11,7 @@ export default function Logo({ className = "h-10 md:h-12 w-auto", variant = "fla
   const [showImage, setShowImage] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  const imgSrc = variant === "3d" ? "/logo-3d.png" : "/logo-flat.png";
+  const imgSrc = "/thesp.png";
 
   useEffect(() => {
     setMounted(true);
