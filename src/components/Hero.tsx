@@ -66,7 +66,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={containerRef}
-      className="relative w-full min-h-[90vh] flex flex-col justify-center px-6 md:px-12 py-16 md:py-28 bg-[#FAF6F2] overflow-hidden custom-hairline-grid border-b border-midnight-slate/5"
+      className="relative w-full min-h-[90vh] flex flex-col justify-center px-6 md:px-12 pt-36 pb-16 md:pt-48 md:pb-28 bg-[#FAF6F2] overflow-hidden custom-hairline-grid border-b border-midnight-slate/5"
     >
       {/* Decorative luxury gradient highlights reflecting the custom shopping bag */}
       <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-rose-blush/10 rounded-full blur-[130px] pointer-events-none" />
