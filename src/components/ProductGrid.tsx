@@ -328,7 +328,7 @@ function ProductCard({ product, idx, isDimmed, isAdded, onAdd }: CardProps) {
       className={`bg-white/40 backdrop-blur-md rounded-3xl p-6 flex flex-col justify-between text-left shadow-sm hover:shadow-editorial-hover relative overflow-hidden group select-none h-[420px] border ${
         !isDimmed && !isDimmed
           ? "border-midnight-slate/10 hover:border-brass-gold/30"
-          : "border-brass-gold/50 shadow-[0_0_15px_rgba(200,162,115,0.25)]"
+          : "border-brass-gold/50 shadow-[0_0_15px_rgba(45, 127, 84, 0.25)]"
       }`}
     >
       {/* Glowing corner line when highlighted by pairing */}

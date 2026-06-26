@@ -68,9 +68,12 @@ export default function Hero() {
       ref={containerRef}
       className="relative w-full min-h-[90vh] flex flex-col justify-center px-6 md:px-12 py-16 md:py-28 bg-[#FAF6F2] overflow-hidden custom-hairline-grid border-b border-midnight-slate/5"
     >
-      {/* Decorative luxury gradient highlights */}
-      <div className="absolute top-[10%] left-[25%] w-[450px] h-[450px] bg-brass-gold/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] bg-rose-blush/80 opacity-5 rounded-full blur-[100px] pointer-events-none" />
+      {/* Decorative luxury gradient highlights reflecting the custom shopping bag */}
+      <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-rose-blush/10 rounded-full blur-[130px] pointer-events-none" />
+      <div className="absolute top-[20%] left-[10%] w-[450px] h-[450px] bg-bag-aqua/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-[-10%] left-[20%] w-[550px] h-[550px] bg-bag-lime/20 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-[10%] right-[-5%] w-[400px] h-[400px] bg-brass-gold-light/10 rounded-full blur-[110px] pointer-events-none" />
+      <div className="absolute bottom-[15%] right-[5%] w-[350px] h-[350px] bg-brass-gold/8 rounded-full blur-[100px] pointer-events-none" />
 
       {/* Main Container */}
       <div className="max-w-7xl mx-auto w-full flex flex-col items-center justify-center text-center space-y-12 relative z-10">
@@ -264,10 +267,10 @@ export default function Hero() {
                     <div className="absolute -top-4 left-1/4 w-1 bg-white/40 h-8 rounded-full blur-xs animate-[bounce_2s_infinite_delay-100]" />
                     <div className="absolute -top-6 left-1/2 w-1.5 bg-white/45 h-10 rounded-full blur-xs animate-[bounce_2.5s_infinite]" />
 
-                    {/* Butter melting */}
-                    <div className="absolute w-24 h-20 bg-brass-gold-light rounded-full opacity-90 blur-xs animate-[pulse_2s_infinite_ease-in-out]">
-                      <div className="absolute -right-2 top-2 w-8 h-6 bg-brass-gold-light rounded-full" />
-                      <div className="absolute -left-1 bottom-1 w-6 h-5 bg-brass-gold-light rounded-full" />
+                    {/* Butter melting (delicious saffron honey butter color) */}
+                    <div className="absolute w-24 h-20 bg-[#FFE5A3] rounded-full opacity-90 blur-xs animate-[pulse_2s_infinite_ease-in-out]">
+                      <div className="absolute -right-2 top-2 w-8 h-6 bg-[#FFE5A3] rounded-full" />
+                      <div className="absolute -left-1 bottom-1 w-6 h-5 bg-[#FFE5A3] rounded-full" />
                     </div>
 
                     {/* Butter Pat */}

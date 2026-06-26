@@ -47,7 +47,7 @@ export default function InfoBadges() {
               transition={{ duration: 0.5, delay: idx * 0.08 }}
               whileHover={{ 
                 y: -3,
-                borderColor: "rgba(200, 162, 115, 0.4)",
+                borderColor: "rgba(45, 127, 84, 0.4)",
                 backgroundColor: "rgba(255, 255, 255, 0.7)"
               }}
               className="flex items-center gap-4 p-4 bg-white/30 border border-midnight-slate/10 rounded-2xl transition-all duration-300 shadow-sm"

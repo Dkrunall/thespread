@@ -238,7 +238,7 @@ export default function MoodQuiz() {
                     {quizQuestions[step - 1].options.map((option, index) => (
                       <motion.button
                         key={index}
-                        whileHover={{ scale: 1.01, borderColor: "rgba(200, 162, 115, 0.5)" }}
+                        whileHover={{ scale: 1.01, borderColor: "rgba(45, 127, 84, 0.5)" }}
                         whileTap={{ scale: 0.99 }}
                         onClick={() => handleAnswer(option.points)}
                         className="w-full p-4 border border-midnight-slate/15 text-left rounded-xl text-xs font-bold text-midnight-slate bg-white/40 transition-colors cursor-pointer"
