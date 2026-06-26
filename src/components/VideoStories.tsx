@@ -111,7 +111,7 @@ export default function VideoStories() {
 
                 {/* Big Play Button Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-midnight-slate text-champagne-silk flex items-center justify-center shadow-lg group-hover:bg-brass-gold group-hover:text-midnight-slate transition-all duration-300">
+                  <div className="w-12 h-12 rounded-full bg-brass-gold text-champagne-silk flex items-center justify-center shadow-lg group-hover:bg-brass-gold-light group-hover:scale-105 transition-all duration-300">
                     <Play className="w-4 h-4 fill-current translate-x-0.5" />
                   </div>
                 </div>
@@ -138,7 +138,7 @@ export default function VideoStories() {
                     e.stopPropagation();
                     handleStoryAddToCart(story.productId);
                   }}
-                  className="w-full py-3 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate border border-transparent font-bold rounded-xl text-center text-[10px] uppercase tracking-widest transition-colors shadow-sm cursor-pointer"
+                  className="w-full py-3 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white border border-transparent font-bold rounded-xl text-center text-[10px] uppercase tracking-widest transition-colors shadow-sm cursor-pointer"
                 >
                   {story.btnLabel}
                 </button>
@@ -276,13 +276,13 @@ export default function VideoStories() {
                       handleStoryAddToCart(activeStory.productId);
                       setActiveStory(null);
                     }}
-                    className="flex-1 py-3.5 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate border border-transparent font-bold rounded-xl text-center text-[10px] uppercase tracking-widest shadow-sm transition-all cursor-pointer"
+                    className="flex-1 py-3.5 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white border border-transparent font-bold rounded-xl text-center text-[10px] uppercase tracking-widest shadow-sm transition-all cursor-pointer"
                   >
                     Add Product (AED {products.find(p=>p.id === activeStory.productId)?.price})
                   </button>
                   <button
                     onClick={() => setActiveStory(null)}
-                    className="py-3.5 px-4 border border-midnight-slate/15 hover:bg-midnight-slate/5 text-midnight-slate font-bold rounded-xl text-center text-xs transition-all cursor-pointer"
+                    className="py-3.5 px-4 border border-brass-gold/30 hover:bg-brass-gold/5 text-brass-gold font-bold rounded-xl text-center text-xs transition-all cursor-pointer"
                   >
                     Close
                   </button>

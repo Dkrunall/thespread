@@ -96,7 +96,7 @@ export default function CartPage() {
               </div>
               <Link
                 href="/"
-                className="inline-block px-8 py-3.5 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-300"
+                className="inline-block px-8 py-3.5 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-300"
               >
                 Browse Flavors
               </Link>
@@ -283,14 +283,14 @@ export default function CartPage() {
                   <div className="space-y-2 pt-2 border-t border-dashed border-midnight-slate/20">
                     <Link
                       href="/checkout"
-                      className="w-full py-4 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
+                      className="w-full py-4 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
                     >
                       Proceed to Checkout
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
                     <Link
                       href="/"
-                      className="w-full py-3.5 border border-midnight-slate/15 hover:bg-midnight-slate/5 text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 flex items-center justify-center"
+                      className="w-full py-3.5 border border-brass-gold/30 hover:bg-brass-gold/5 text-brass-gold font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 flex items-center justify-center"
                     >
                       Keep Shopping
                     </Link>

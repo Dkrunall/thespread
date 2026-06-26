@@ -15,9 +15,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-midnight-slate text-champagne-silk py-16 md:py-24 relative overflow-hidden select-none border-t border-brass-gold/10">
+    <footer className="w-full bg-brass-gold text-champagne-silk py-16 md:py-24 relative overflow-hidden select-none border-t border-brass-gold-light/10">
       {/* Decorative blurred background blobs */}
-      <div className="absolute top-[20%] left-[-5%] w-[350px] h-[350px] bg-brass-gold/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-[20%] left-[-5%] w-[350px] h-[350px] bg-white/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-5%] w-[300px] h-[300px] bg-rose-blush/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center text-center space-y-8 md:space-y-12 relative z-10">
@@ -25,7 +25,7 @@ export default function Footer() {
         {/* Scroll To Top Button */}
         <button
           onClick={handleScrollToTop}
-          className="p-3.5 bg-champagne-silk text-midnight-slate hover:bg-brass-gold rounded-full transition-all duration-300 shadow-lg hover:-translate-y-1 cursor-pointer active:scale-95 group border border-brass-gold/20"
+          className="p-3.5 bg-champagne-silk text-brass-gold hover:bg-bag-lime hover:text-midnight-slate rounded-full transition-all duration-300 shadow-lg hover:-translate-y-1 cursor-pointer active:scale-95 group border border-brass-gold/20"
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-4 h-4 group-hover:animate-bounce" />
@@ -47,7 +47,7 @@ export default function Footer() {
           </span>
           <a
             href="mailto:hello@thedailyspread.ae"
-            className="font-serif-display text-xl md:text-3xl font-black text-brass-gold hover:text-brass-gold-light transition-colors underline decoration-1 decoration-brass-gold/30 underline-offset-8"
+            className="font-serif-display text-xl md:text-3xl font-black text-bag-lime hover:text-bag-aqua transition-colors underline decoration-1 decoration-bag-lime/30 underline-offset-8"
           >
             hello@thedailyspread.ae
           </a>
@@ -62,7 +62,7 @@ export default function Footer() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full border border-champagne-silk/15 hover:border-brass-gold hover:text-brass-gold flex items-center justify-center transition-colors"
+              className="w-9 h-9 rounded-full border border-champagne-silk/15 hover:border-bag-lime hover:text-bag-lime flex items-center justify-center transition-colors"
               aria-label="Follow on Instagram"
             >
               <svg
@@ -77,7 +77,7 @@ export default function Footer() {
               href="https://tiktok.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full border border-champagne-silk/15 hover:border-brass-gold hover:text-brass-gold flex items-center justify-center transition-colors"
+              className="w-9 h-9 rounded-full border border-champagne-silk/15 hover:border-bag-lime hover:text-bag-lime flex items-center justify-center transition-colors"
               aria-label="Follow on TikTok"
             >
               <svg
@@ -95,10 +95,10 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-brass-gold transition-colors">
+            <Link href="/privacy" className="hover:text-bag-lime transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-brass-gold transition-colors">
+            <Link href="/terms" className="hover:text-bag-lime transition-colors">
               Terms of Service
             </Link>
           </div>

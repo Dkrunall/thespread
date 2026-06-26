@@ -210,7 +210,7 @@ export default function MoodQuiz() {
                   </div>
                   <button
                     onClick={() => setStep(1)}
-                    className="px-8 py-3.5 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate border border-transparent font-bold text-xs uppercase tracking-widest rounded-full shadow-sm transition-all duration-300"
+                    className="px-8 py-3.5 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white border border-transparent font-bold text-xs uppercase tracking-widest rounded-full shadow-sm transition-all duration-300"
                   >
                     Start the Assessment
                   </button>

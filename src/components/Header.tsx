@@ -57,9 +57,9 @@ export default function Header() {
   return (
     <>
       <header className={`w-full z-40 top-0 left-0 bg-transparent ${pathname === "/" ? "absolute" : "relative"}`}>
-        {/* Top Marquee Banner - Midnight background & Brass text */}
-        <div className="w-full bg-midnight-slate py-2.5 overflow-hidden border-b border-brass-gold/10 flex items-center select-none">
-          <div className="animate-marquee-slow flex whitespace-nowrap text-[10px] font-mono uppercase tracking-[0.25em] text-brass-gold-light/95 gap-16">
+        {/* Top Marquee Banner - Primary Green background & White text */}
+        <div className="w-full bg-brass-gold py-2.5 overflow-hidden border-b border-brass-gold-light/10 flex items-center select-none">
+          <div className="animate-marquee-slow flex whitespace-nowrap text-[10px] font-mono uppercase tracking-[0.25em] text-champagne-silk/90 gap-16">
             <span>The Daily Spread • Dubai-Born Gourmet Spreads</span>
             <span>•</span>
             <span>Est. 2026 • Curated Ingredients Only</span>
@@ -83,7 +83,7 @@ export default function Header() {
           <nav
             className={`w-full max-w-7xl mx-auto px-6 md:px-10 py-4 rounded-full flex justify-between items-center border transition-all duration-500 ${
               isScrolled
-                ? "bg-[#FAF6F2]/80 backdrop-blur-md border-[#121815]/10 shadow-editorial"
+                ? "bg-[#F5F6F5]/80 backdrop-blur-md border-[#121815]/10 shadow-editorial"
                 : "bg-transparent border-transparent"
             }`}
           >
@@ -144,11 +144,11 @@ export default function Header() {
             <div className="flex items-center gap-4">
               <button
                 onClick={() => setIsCartOpen(true)}
-                className="py-2.5 px-5 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-300 flex items-center gap-3 shadow-md active:scale-95 group cursor-pointer"
+                className="py-2.5 px-5 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-300 flex items-center gap-3 shadow-md active:scale-95 group cursor-pointer"
               >
                 <ShoppingBag className="w-4 h-4" />
                 <span>Spread</span>
-                <span className="w-5 h-5 rounded-full bg-brass-gold text-midnight-slate text-[10px] flex items-center justify-center font-extrabold transition-transform duration-300 group-hover:scale-110">
+                <span className="w-5 h-5 rounded-full bg-bag-lime text-midnight-slate text-[10px] flex items-center justify-center font-extrabold transition-transform duration-300 group-hover:scale-110">
                   {cartCount}
                 </span>
               </button>

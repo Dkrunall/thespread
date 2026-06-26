@@ -237,8 +237,8 @@ export default function ProductGrid() {
                     onClick={() => setSelectedPairing(isActive ? null : pairing.id)}
                     className={`py-3 px-5 rounded-2xl border font-mono text-[10px] font-bold tracking-widest uppercase transition-all duration-300 flex items-center gap-2 cursor-pointer ${
                       isActive
-                        ? "bg-midnight-slate text-champagne-silk border-transparent shadow-md"
-                        : "bg-white/40 border-midnight-slate/10 text-midnight-slate/70 hover:border-brass-gold hover:text-brass-gold"
+                        ? "bg-brass-gold text-champagne-silk border-transparent shadow-md"
+                        : "bg-white/40 border-brass-gold/15 text-midnight-slate/70 hover:border-brass-gold hover:text-brass-gold"
                     }`}
                   >
                     <span>{pairing.icon}</span>

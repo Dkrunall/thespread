@@ -294,7 +294,7 @@ export default function CheckoutPage() {
                           if (validateStep1()) setStep(2);
                           else alert("Please fill in all required contact and shipping details.");
                         }}
-                        className="w-full py-4 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
+                        className="w-full py-4 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
                       >
                         Continue to Delivery
                       </button>
@@ -322,8 +322,8 @@ export default function CheckoutPage() {
                             onClick={() => setShippingMethod("express")}
                             className={`p-4 rounded-2xl border-2 cursor-pointer transition-all flex flex-col justify-between h-28 ${
                               shippingMethod === "express"
-                                ? "border-midnight-slate bg-white/70"
-                                : "border-midnight-slate/10 hover:border-brass-gold"
+                                ? "border-brass-gold bg-white/70"
+                                : "border-brass-gold/20 hover:border-brass-gold"
                             }`}
                           >
                             <div className="flex justify-between items-center">
@@ -341,8 +341,8 @@ export default function CheckoutPage() {
                             onClick={() => setShippingMethod("vip")}
                             className={`p-4 rounded-2xl border-2 cursor-pointer transition-all flex flex-col justify-between h-28 ${
                               shippingMethod === "vip"
-                                ? "border-midnight-slate bg-white/70"
-                                : "border-midnight-slate/10 hover:border-brass-gold"
+                                ? "border-brass-gold bg-white/70"
+                                : "border-brass-gold/20 hover:border-brass-gold"
                             }`}
                           >
                             <div className="flex justify-between items-center">
@@ -361,14 +361,14 @@ export default function CheckoutPage() {
                         <button
                           type="button"
                           onClick={() => setStep(1)}
-                          className="px-6 py-4 border border-midnight-slate/15 hover:bg-midnight-slate/5 text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-colors cursor-pointer"
+                          className="px-6 py-4 border border-brass-gold/30 hover:bg-brass-gold/5 text-brass-gold font-bold text-xs uppercase tracking-widest rounded-xl transition-colors cursor-pointer"
                         >
                           Back
                         </button>
                         <button
                           type="button"
                           onClick={() => setStep(3)}
-                          className="flex-1 py-4 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
+                          className="flex-1 py-4 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
                         >
                           Continue to Payment
                         </button>
@@ -461,13 +461,13 @@ export default function CheckoutPage() {
                         <button
                           type="button"
                           onClick={() => setStep(2)}
-                          className="px-6 py-4 border border-midnight-slate/15 hover:bg-midnight-slate/5 text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-colors cursor-pointer"
+                          className="px-6 py-4 border border-brass-gold/30 hover:bg-brass-gold/5 text-brass-gold font-bold text-xs uppercase tracking-widest rounded-xl transition-colors cursor-pointer"
                         >
                           Back
                         </button>
                         <button
                           type="submit"
-                          className="flex-1 py-4 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
+                          className="flex-1 py-4 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
                         >
                           Place Order & Churn
                         </button>
@@ -561,7 +561,7 @@ export default function CheckoutPage() {
                           setStep(3);
                         }
                       }}
-                      className="w-full py-4 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
+                      className="w-full py-4 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
                     >
                       {step === 1 && "Continue to Delivery"}
                       {step === 2 && "Continue to Payment"}
@@ -636,7 +636,7 @@ export default function CheckoutPage() {
                 </p>
                 <button
                   onClick={handleSuccessClose}
-                  className="w-full py-4 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all shadow-md cursor-pointer"
+                  className="w-full py-4 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all shadow-md cursor-pointer"
                 >
                   Return to Home
                 </button>

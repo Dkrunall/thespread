@@ -75,7 +75,7 @@ export default function CartDrawer() {
                   </div>
                   <button
                     onClick={() => setIsCartOpen(false)}
-                    className="px-6 py-3 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate border border-transparent font-bold text-xs uppercase tracking-widest rounded-full transition-colors shadow-sm cursor-pointer"
+                    className="px-6 py-3 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white border border-transparent font-bold text-xs uppercase tracking-widest rounded-full transition-colors shadow-sm cursor-pointer"
                   >
                     Explore Collections
                   </button>
@@ -181,7 +181,7 @@ export default function CartDrawer() {
                   <Link
                     href="/checkout"
                     onClick={() => setIsCartOpen(false)}
-                    className="w-full py-4 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
+                    className="w-full py-4 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
                   >
                     Proceed to Checkout
                     <motion.span
@@ -194,7 +194,7 @@ export default function CartDrawer() {
                   <Link
                     href="/cart"
                     onClick={() => setIsCartOpen(false)}
-                    className="w-full py-3 border border-midnight-slate/15 hover:bg-midnight-slate/5 text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 flex items-center justify-center"
+                    className="w-full py-3 border border-brass-gold/30 hover:bg-brass-gold/5 text-brass-gold font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 flex items-center justify-center"
                   >
                     View Shopping Cart
                   </Link>

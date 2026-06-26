@@ -99,15 +99,15 @@ export default function Hero() {
           <div className="hero-actions flex justify-center gap-5 items-center pt-2">
             <button
               onClick={handleShopScroll}
-              className="py-3.5 px-8 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-500 shadow-editorial hover:shadow-editorial-hover hover:scale-105 active:scale-95 cursor-pointer"
+              className="py-3.5 px-8 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-500 shadow-editorial hover:shadow-editorial-hover hover:scale-105 active:scale-95 cursor-pointer"
             >
               Shop the Collection
             </button>
             <button
               onClick={() => setIsVideoOpen(true)}
-              className="py-3.5 px-8 border border-midnight-slate/15 hover:border-brass-gold hover:bg-brass-gold/5 text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-500 hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
+              className="py-3.5 px-8 border border-brass-gold/35 hover:border-brass-gold hover:bg-brass-gold/5 text-brass-gold font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-500 hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
             >
-              <Play className="w-3 h-3 fill-midnight-slate text-midnight-slate" />
+              <Play className="w-3 h-3 fill-brass-gold text-brass-gold" />
               Watch Concept Reel
             </button>
           </div>
@@ -339,13 +339,13 @@ export default function Hero() {
                       const grid = document.getElementById("shop");
                       if (grid) grid.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="flex-1 py-3.5 bg-midnight-slate hover:bg-brass-gold text-champagne-silk hover:text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all cursor-pointer"
+                    className="flex-1 py-3.5 bg-brass-gold hover:bg-brass-gold-light text-champagne-silk hover:text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all cursor-pointer"
                   >
                     View Flavors
                   </button>
                   <button
                     onClick={() => setIsVideoOpen(false)}
-                    className="py-3.5 px-6 border border-midnight-slate/15 hover:bg-midnight-slate/5 text-midnight-slate font-bold text-xs uppercase tracking-widest rounded-xl transition-all cursor-pointer"
+                    className="py-3.5 px-6 border border-brass-gold/30 hover:bg-brass-gold/5 text-brass-gold font-bold text-xs uppercase tracking-widest rounded-xl transition-all cursor-pointer"
                   >
                     Close
                   </button>
