@@ -18,7 +18,7 @@ export default function Footer() {
     <footer className="w-full bg-brass-gold text-champagne-silk py-16 md:py-24 relative overflow-hidden select-none border-t border-brass-gold-light/10">
       {/* Decorative blurred background blobs */}
       <div className="absolute top-[20%] left-[-5%] w-[350px] h-[350px] bg-white/5 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] right-[-5%] w-[300px] h-[300px] bg-rose-blush/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-[-10%] right-[-5%] w-[300px] h-[300px] bg-rose-blush-alt/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center text-center space-y-8 md:space-y-12 relative z-10">
         

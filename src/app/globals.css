@@ -12,26 +12,32 @@
   --bag-aqua: #87D1CC; /* Light Aqua */
   --bag-lime: #BDD39E; /* Lime Accent */
   --bag-teal: #04AE97; /* Accent Teal */
+  --bag-lime-alt: #BCD49A; /* Lime Accent Alternative */
+  --bag-aqua-alt: #8BD2CE; /* Light Aqua Alternative */
+  --rose-blush-alt: #F587B2; /* Pink Accent Alternative */
   --border-color: rgba(18, 24, 21, 0.08);
   --border-color-glow: rgba(7, 116, 91, 0.25);
   --card-glass: rgba(255, 255, 255, 0.45);
 }
 
 @theme {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-midnight-slate: var(--midnight-slate);
-  --color-champagne-silk: var(--champagne-silk);
-  --color-brass-gold: var(--brass-gold);
-  --color-brass-gold-light: var(--brass-gold-light);
-  --color-rose-blush: var(--rose-blush);
-  --color-rose-blush-dark: var(--rose-blush-dark);
-  --color-bag-aqua: var(--bag-aqua);
-  --color-bag-lime: var(--bag-lime);
-  --color-bag-teal: var(--bag-teal);
-  --color-border-card: var(--border-color);
-  --color-border-card-glow: var(--border-color-glow);
-  --color-card-glass: var(--card-glass);
+  --color-background: #F5F6F5;
+  --color-foreground: #121815;
+  --color-midnight-slate: #121815;
+  --color-champagne-silk: #F5F6F5;
+  --color-brass-gold: #07745B;
+  --color-brass-gold-light: #418764;
+  --color-rose-blush: #F283AE;
+  --color-rose-blush-dark: #D85887;
+  --color-bag-aqua: #87D1CC;
+  --color-bag-lime: #BDD39E;
+  --color-bag-teal: #04AE97;
+  --color-bag-lime-alt: #BCD49A;
+  --color-bag-aqua-alt: #8BD2CE;
+  --color-rose-blush-alt: #F587B2;
+  --color-border-card: rgba(18, 24, 21, 0.08);
+  --color-border-card-glow: rgba(7, 116, 91, 0.25);
+  --color-card-glass: rgba(255, 255, 255, 0.45);
 
   --font-serif: var(--font-serif), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;

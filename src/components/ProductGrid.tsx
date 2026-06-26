@@ -87,7 +87,7 @@ export default function ProductGrid() {
       {/* Slogan Flower Badge "spread a little happiness" (Top Left) */}
       <div className="absolute top-8 left-4 md:left-12 z-20 hidden sm:block rotate-[-12deg]">
         <div className="w-24 h-24 relative flex items-center justify-center text-center">
-          <svg className="absolute w-full h-full text-rose-blush/80 drop-shadow-sm" viewBox="0 0 100 100">
+          <svg className="absolute w-full h-full text-rose-blush-alt/80 drop-shadow-sm" viewBox="0 0 100 100">
             <path
               d="M 50,20 C 45,5 35,5 30,20 C 15,15 15,25 30,35 C 10,40 10,50 30,55 C 15,65 15,75 30,70 C 35,85 45,85 50,70 C 55,85 65,85 70,70 C 85,75 85,65 70,55 C 90,50 90,40 70,35 C 85,25 85,15 70,20 C 65,5 55,5 50,20 Z"
               fill="currentColor"
@@ -460,7 +460,7 @@ function ProductCard({ product, idx, isDimmed, isAdded, onAdd }: CardProps) {
           className={`w-full py-3 rounded-full font-bold text-xs uppercase tracking-widest mt-2 flex items-center justify-center gap-2 cursor-pointer transition-all duration-500 ${
             isAdded
               ? "animate-pulse"
-              : "bg-midnight-slate text-champagne-silk border border-transparent shadow-sm hover:scale-102 active:scale-98"
+              : "bg-brass-gold text-champagne-silk border border-transparent shadow-sm hover:scale-102 active:scale-98"
           }`}
         >
           {isAdded ? (

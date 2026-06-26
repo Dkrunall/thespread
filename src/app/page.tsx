@@ -3,8 +3,10 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import InfoBadges from "@/components/InfoBadges";
 import ProductGrid from "@/components/ProductGrid";
+import ChurnProcess from "@/components/ChurnProcess";
 import VideoStories from "@/components/VideoStories";
 import UseItEverywhere from "@/components/UseItEverywhere";
+import ServingSecrets from "@/components/ServingSecrets";
 import MoodQuiz from "@/components/MoodQuiz";
 import Footer from "@/components/Footer";
 
@@ -24,12 +26,18 @@ export default function Home() {
         
         {/* Filterable Products Catalog */}
         <ProductGrid />
+
+        {/* Small-batch churning workflow storytelling */}
+        <ChurnProcess />
         
         {/* Horizontal scrollable Vertical Video Stories */}
         <VideoStories />
         
         {/* Application sections with GSAP ScrollTrigger timeline */}
         <UseItEverywhere />
+
+        {/* Culinary Serving Secrets accordion FAQ */}
+        <ServingSecrets />
       </main>
       
       {/* Footer block */}

@@ -39,9 +39,9 @@ export const products: Product[] = [
     price: 26,
     description: "Classic, aromatic and perfect on everything.",
     category: "savory",
-    color: "#BDD39E", /* Lime Accent */
+    color: "#BCD49A", /* Lime Accent Alternative */
     tags: ["Herb & Savory", "Everyday"],
-    imageBg: "bg-[#BDD39E]",
+    imageBg: "bg-bag-lime-alt",
   },
   {
     id: "spicy-thai",
@@ -49,9 +49,9 @@ export const products: Product[] = [
     price: 28,
     description: "Bold, zesty and slightly spicy.",
     category: "savory",
-    color: "#F283AE", /* Pink Accent */
+    color: "#F587B2", /* Pink Accent Alternative */
     tags: ["Herb & Savory", "Zesty"],
-    imageBg: "bg-[#F283AE]",
+    imageBg: "bg-rose-blush-alt",
   },
   {
     id: "sundried-tomatoes",
@@ -79,9 +79,9 @@ export const products: Product[] = [
     price: 27,
     description: "Fruity, bright and irresistibly smooth.",
     category: "sweet",
-    color: "#F283AE", /* Pink Accent */
+    color: "#F587B2", /* Pink Accent Alternative */
     tags: ["Sweet & Indulgent", "Toast"],
-    imageBg: "bg-[#F283AE]",
+    imageBg: "bg-rose-blush-alt",
   },
   {
     id: "chocolate-hazelnut",
@@ -99,9 +99,9 @@ export const products: Product[] = [
     price: 28,
     description: "Nutty, creamy and perfectly balanced.",
     category: "sweet",
-    color: "#BDD39E", /* Lime Accent */
+    color: "#BCD49A", /* Lime Accent Alternative */
     tags: ["Sweet & Indulgent", "Snack"],
-    imageBg: "bg-[#BDD39E]",
+    imageBg: "bg-bag-lime-alt",
   },
   {
     id: "date-miso",
@@ -119,9 +119,9 @@ export const products: Product[] = [
     price: 32,
     description: "Luxurious, floral and delicately sweet.",
     category: "specialty",
-    color: "#87D1CC", /* Light Aqua */
+    color: "#8BD2CE", /* Light Aqua Alternative */
     tags: ["Specialty", "Giftable"],
-    imageBg: "bg-[#87D1CC]",
+    imageBg: "bg-bag-aqua-alt",
   },
   {
     id: "karak-chai",
@@ -139,9 +139,9 @@ export const products: Product[] = [
     price: 31,
     description: "Creamy, rich and perfectly spreadable.",
     category: "vegan",
-    color: "#BDD39E", /* Lime Accent */
+    color: "#BCD49A", /* Lime Accent Alternative */
     tags: ["Specialty", "Plant-Based"],
-    imageBg: "bg-[#BDD39E]",
+    imageBg: "bg-bag-lime-alt",
   },
   {
     id: "vegan-garlic-butter",
@@ -159,9 +159,9 @@ export const products: Product[] = [
     price: 29,
     description: "Smoky, spicy and packed with flavour.",
     category: "savory",
-    color: "#F283AE", /* Pink Accent */
+    color: "#F587B2", /* Pink Accent Alternative */
     tags: ["Salt & Smoke", "Bold"],
-    imageBg: "bg-[#F283AE]",
+    imageBg: "bg-rose-blush-alt",
   },
   {
     id: "bourbon",

@@ -69,9 +69,9 @@ export default function Hero() {
       className="relative w-full min-h-[90vh] flex flex-col justify-center px-6 md:px-12 pt-36 pb-16 md:pt-48 md:pb-28 bg-[#FAF6F2] overflow-hidden custom-hairline-grid border-b border-midnight-slate/5"
     >
       {/* Decorative luxury gradient highlights reflecting the custom shopping bag */}
-      <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-rose-blush/10 rounded-full blur-[130px] pointer-events-none" />
-      <div className="absolute top-[20%] left-[10%] w-[450px] h-[450px] bg-bag-aqua/20 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] left-[20%] w-[550px] h-[550px] bg-bag-lime/20 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-rose-blush-alt/10 rounded-full blur-[130px] pointer-events-none" />
+      <div className="absolute top-[20%] left-[10%] w-[450px] h-[450px] bg-bag-aqua-alt/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-[-10%] left-[20%] w-[550px] h-[550px] bg-bag-lime-alt/20 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute top-[10%] right-[-5%] w-[400px] h-[400px] bg-brass-gold-light/10 rounded-full blur-[110px] pointer-events-none" />
       <div className="absolute bottom-[15%] right-[5%] w-[350px] h-[350px] bg-brass-gold/8 rounded-full blur-[100px] pointer-events-none" />
 

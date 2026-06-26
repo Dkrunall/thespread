@@ -101,7 +101,7 @@ export default function Header() {
               }}
               className="flex select-none group py-1 items-center"
             >
-              <Logo className="h-10 md:h-12 w-auto text-primary-green" />
+              <Logo className="h-10 md:h-12 w-auto text-brass-gold" />
             </Link>
 
             {/* Navigation Links - Desktop */}

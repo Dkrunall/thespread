@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${serifFont.variable} ${sansFont.variable} h-full scroll-smooth`}>
-      <body className="min-h-full flex flex-col bg-cream-bg text-charcoal-text font-sans selection:bg-pastel-pink selection:text-primary-green">
+      <body className="min-h-full flex flex-col bg-champagne-silk text-midnight-slate font-sans selection:bg-rose-blush selection:text-champagne-silk">
         <CartProvider>
           {children}
         </CartProvider>

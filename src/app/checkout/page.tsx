@@ -624,8 +624,8 @@ export default function CheckoutPage() {
                 </span>
                 <div className="flex justify-center gap-1.5 py-1">
                   <div className="w-5 h-5 rounded-full bg-brass-gold" />
-                  <div className="w-5 h-5 rounded-full bg-rose-blush" />
-                  <div className="w-5 h-5 rounded-full bg-primary-green" />
+                  <div className="w-5 h-5 rounded-full bg-rose-blush-alt" />
+                  <div className="w-5 h-5 rounded-full bg-bag-teal" />
                 </div>
                 <div className="w-full h-2 bg-[#8A6D43]/20 rounded-full animate-pulse" />
               </div>

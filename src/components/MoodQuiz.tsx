@@ -314,7 +314,7 @@ export default function MoodQuiz() {
                       className={`flex-1 py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 transition-all cursor-pointer ${
                         isAdded
                           ? ""
-                          : "bg-midnight-slate text-champagne-silk hover:text-midnight-slate"
+                          : "bg-brass-gold text-champagne-silk hover:bg-brass-gold-light hover:text-white"
                       }`}
                     >
                       {isAdded ? (
