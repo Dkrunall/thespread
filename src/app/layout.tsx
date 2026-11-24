@@ -1,46 +1,55 @@
 import type { Metadata } from "next";
-import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import { Courier_Prime, Fraunces, Reenie_Beanie } from "next/font/google";
 import { CartProvider } from "@/context/CartContext";
 import "./globals.css";
 
-const serifFont = Fraunces({
+const serif = Fraunces({
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--ff-serif",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  axes: ["SOFT", "WONK", "opsz"],
 });
 
-const sansFont = Plus_Jakarta_Sans({
+const type = Courier_Prime({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--ff-type",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "700"],
 });
+
+const hand = Reenie_Beanie({
+  subsets: ["latin"],
+  variable: "--ff-hand",
+  display: "swap",
+  weight: "400",
+});
+
+const description =
+  "Butter, but make it cinematic. Double-whipped flavored butters and sweet spreads, made in small batches in Dubai.";
 
 export const metadata: Metadata = {
   title: "The Daily Spread | Dubai-Born Gourmet Flavored Butters & Spreads",
-  description: "Butter, but make it cinematic. A fun, video-first shopping experience for flavored butters, sweet spreads, gifting boxes, and press hampers. Small batched with love.",
+  description,
   keywords: ["gourmet butter", "flavored butter", "Dubai spreads", "saffron honey butter", "karak chai butter", "artisanal butter", "B2C food brand"],
   authors: [{ name: "The Daily Spread" }],
   openGraph: {
     title: "The Daily Spread | Gourmet Flavored Butters & Spreads",
-    description: "Butter, but make it cinematic. A fun, video-first shopping experience for flavored butters, sweet spreads, gifting boxes, and press hampers.",
+    description,
     type: "website",
     locale: "en_AE",
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${serifFont.variable} ${sansFont.variable} h-full scroll-smooth`}>
-      <body className="min-h-full flex flex-col bg-champagne-silk text-midnight-slate font-sans selection:bg-rose-blush selection:text-champagne-silk">
-        <CartProvider>
-          {children}
-        </CartProvider>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`${serif.variable} ${type.variable} ${hand.variable} h-full scroll-smooth`}
+    >
+      <body className="min-h-full flex flex-col selection:bg-pink selection:text-ink">
+        <CartProvider>{children}</CartProvider>
       </body>
     </html>
   );
